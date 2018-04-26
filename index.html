@@ -19,7 +19,7 @@
   <body>
     <main class="grid-container"> <!-- ///OPEN CONTAINER/// -->
       <header class="grid-x grid-padding-x grid-margin-y"> <!--///ROW 1/// -->
-          <h1 class= "large-12 cell" "solid"><a href="index.html">EVAN</a><span class="thin">RAMIREZ</span></h1>
+          <h1 class= "large-12 cell"><a href="index.html">EVAN</a><span class="thin">RAMIREZ</span></h1>
       </header>
             <!-- ///ZURB Responsive NAV BAR/// -->
       <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
@@ -52,36 +52,95 @@
           </ul>
         </div>
       </nav>
-            <!-- ///ZURB Responsive NAV BAR/// -->
-
+            <!-- ///END ZURB Responsive NAV BAR/// -->
+            <div class="grid-x grid-padding-x grid-margin-y"> <!--///SPACER/// -->
+              <div class="large-12 cell">
+              </div>
+            </div>
         <div class="grid-x grid-padding-x grid-margin-y">
-          <div class="large-12 cell"> <!-- ///SPACER/// -->
-
+          <div class="large-10 cell large-offset-1 cell">
+            <!-- ///ORBIT SLIDER/// -->
+              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit-wrapper">
+                  <div class="orbit-controls">
+                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                  </div>
+                  <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/logo_433.jpg" alt="Evan Logo">
+                        <figcaption class="orbit-caption">Evan Ramirez Graphic Design Logo.</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/hair_rev_800.jpg" alt="hair revolution screen print">
+                        <figcaption class="orbit-caption">Screen Print for Hair Revolution Salon</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/zorn_800.jpg" alt="hatching portrait">
+                        <figcaption class="orbit-caption">Hatching portrait on photoshop</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/lexy_800.jpg" alt="Picture of Couple at wedding">
+                        <figcaption class="orbit-caption">Moment captured between a couple at a wedding. </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
+                </div>
+                <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+              </div>
+                <!-- ///ORBIT SLIDER/// -->
           </div>
         </div>
-        <div class="grid-x grid-padding-x grid-margin-y">
-          <div class="large-6 cell large-offset-1 cell">
-            <img src="img/logo_600.jpg" alt="blue graphic design logo">
+          <div class="grid-x grid-padding-x grid-margin-y">
+            <div class="large-10 cell large-offset-1 cell">
+              <h3> Evan Ramirez provides effective graphic, print, and web designs to clients in a open enviroment with a friendly
+                voice, helping them feel assured and excited about their design solutions.</h3>
+            </div>
           </div>
-          <div class="large-4 cell">
-            <h3> Evan Ramirez provides effective graphic, print, and web designs to clients in a open enviroment with a friendly
-              voice, helping them feel assured and excited about their design solutions.</h3>
+          <!-- ///REVEAL CODE/// -->
+          <!-- <div class= id="exampleModal1" data-reveal>
+              <h1>Awesome. I Have It.</h1>
+              <p class="lead">Your couch. It is mine.</p>
+              <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
           </div>
-        </div>
+            <p><button class="button" data-open="exampleModal1">Click me for a modal</button></p>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+    <!-- ///END REVEAL CODE/// -->
 
       <!-- ///FOOTER/// -->
-      <div class="grid-x grid-padding-x grid-margin-y"><!--///ROW 5/// -->
+      <div class="grid-x grid-padding-x grid-margin-y">
         <footer class="large-12 cell solidtop">
           <br>
           <a href ="https://www.linkedin.com/in/evan-ramirez-6bab18152/" target="blank" alt="Linked in link"><img src="img/inlogo_30.png"></a>
           <a href ="https://www.instagram.com/navezan/" target="blank" alt="instagram link"><img src="img/instlogo.png"></a>
           <h4> &#169; 2018 <strong>Evan Ramirez</strong></h4>
           </div>
+          <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-5 cell large-offset-4 cell">
+              <h3 id="today"></h3><h3 id="time"></h3>
+            </div>
+          </div>
         </footer>
       </div>
-
     </main> <!-- ///END GRID CONTAINER/// -->
-  </body>
+
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -92,4 +151,6 @@
       <script src="zurb6/js/vendor/foundation.js"></script>
       <script src="zurb6/js/app.js"></script>
       <!-- ///NEED FOR ZURB/// -->
+      <script src="js/date_time.js"></script>
+  </body>
 </html>

@@ -1,225 +1,157 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tea shop home </title>
-    <!-- //// need for zurb - EDIT FILEPATHS ///// -->
+    <!-- ///NEED FOR ZURB/// -->
     <link rel="stylesheet" href="zurb/css/foundation.css">
     <link rel="stylesheet" href="zurb/css/app.css">
-    <!-- //// need for zurb - EDIT FILEPATHS ///// -->
-    <meta name="description" content="Tea Shop Home">
-    <meta name="author" content="Jacob Heidt">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display" rel="stylesheet">
-    <link href="redesign.css" rel="stylesheet">
-    <style>
-    main {
-      height: 1600px;
-    }
-    </style>
+    <!-- ///NEED FOR ZURB/// -->
+    <title>Evan's Portfolio Home Page</title>
+    <meta name="description" content="Evan's Portfolio Home Page">
+    <meta name="author" content="Evan Ramirez">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Noticia+Text" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
   </head>
-
-
   <body>
-
-    <main class="grid-container">
-      <header class="grid-x grid-margin-x grid-padding-x">
-        <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="large">
-        </div>
-
-        <nav>
-          <div class="topnav" id="myTopnav">
-              <a href="index.html" class="active">Home</a>
-              <div class="dropdown">
-                <button class="dropbtn" href="chocolate.html"<>Chocolate
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="chocolate.html#artisan">Artisan</a>
-                  <a href="chocolate.html#slim">Slim</a>
-                  <a href="chocolate.html#truffle">Truffle</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn" href="tea.html"<>Tea
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="tea.html#greens">Greens</a>
-                  <a href="tea.html#black">Black</a>
-                  <a href="tea.html#herbal">Herbal</a>
-                </div>
-              </div>
-              <a href="about.html" id="padding">About</a>
-              <a href="https://twitter.com/TTRChocolate" target="_blank"><img src ="img/twitter-1icon.png"></a>
-              <a href="https://www.facebook.com/TeaRoomChocolates/" target="_blank"><img src ="img/facebook-1icon.png"></a>
-
-              <a href="https://www.youtube.com/user/TheTeaRoomChocolate" target="_blank"><img src ="img/youtube-1icon.png"></a>
-
-              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
-        </nav>
-
-      <figure class="large-12 cell large-offset-4 grid-padding-y">
-        <img class="main-logo" src="img/tea-logo.png" alt="logo">
-      </figure>
+    <main class="grid-container"> <!-- ///OPEN CONTAINER/// -->
+      <header class="grid-x grid-padding-x grid-margin-y"> <!--///ROW 1/// -->
+          <h1 class= "large-12 cell"><a href="index.html">EVAN</a><span class="thin">RAMIREZ</span></h1>
       </header>
+            <!-- ///ZURB Responsive NAV BAR/// -->
+      <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="main-nav"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
 
-
-<!--- put html in here ---------->
-          <div class="orbit" role="region" aria-label="Tea Shop Images" data-orbit>
-          <div class="orbit-wrapper">
-          <div class="orbit-controls">
-          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-          </div>
-          <ul class="orbit-container">
-          <li class="is-active orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="img/jh-chocolate-main.jpeg" alt="chocolate in boxed heart">
-              <figcaption class="orbit-caption">Chocolates for that special someone</figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="img/jh-tea-main.jpg" alt="homemade tea">
-              <figcaption class="orbit-caption">Choose from our selection of homemade tea</figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="img/jh-tea-room.jpeg" alt="lounging area1">
-              <figcaption class="orbit-caption">Enjoy our comfortable lounging area</figcaption>
-            </figure>
-          </li>
-          <li class="orbit-slide">
-            <figure class="orbit-figure">
-              <img class="orbit-image" src="img/jh-tea-room2.jpeg" alt="lounging area1">
-              <figcaption class="orbit-caption">Enjoy our comforatble lounging area</figcaption>
-            </figure>
-          </li>
+      <nav class="top-bar" id="main-nav">
+        <div class="top-bar-left">
+          <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
+            <li class="menu-text"></li>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+              <ul class="menu vertical">
+                <li><a href="gallery.html#design">Design</a></li>
+                <li><a href="gallery.html#print">Print</a></li>
+                <li><a href="gallery.html#photography">Photography</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="#">Web Design 3870</a>
+              <ul class="menu vertical">
+                <li><a href="redesign/index.html">Redesign</a></li>
+                <li><a href="p2slides.html">p2slides</a></li>
+                <li><a href="#">Animation</a></li>
+                <li><a href="#">Long scrolling site</a></li>
+              </ul>
+            </li>
           </ul>
-          </div>
-          <nav class="orbit-bullets">
-          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-          </nav>
-          </div>
-            <section class="grid-x">
-                <div class="large-12 cell">
-                  <h2 class="jh-whoweare">Who We Are</h2>
-                    <p class="jh-info1">The Tea Room was one of the first companies to pioneer the fusion of tea
-                    and chocolate. Our organic, tea infused chocolate bar line although quite
-                    young at less than two years old, has already been the recipient of
-                    several awards. Among the most notable award are The Sofi Silver which
-                    we were awarded for our Green Earl Grey bar in 2009, as well as the many
-                    Top Gear & Chocolate Salon awards that we were awarded both in 2008 and
-                    2009. Despite the numerous accolades that we have received for our organic,
-                    tea infused chocolate bars it was only recently, though our attendance at
-                    several wine and chocolate festivals that we discovered The Tea Room's bars
-                    can be paired with a wide variety of wines to greatly enhance any wine
-                    experience. To that end we have created this convenient wine and chocolate
-                    pairing guide so that you may have an even more delightful wine and chocolate
-                    experience.</p>
+        </div>
+      </nav>
+            <!-- ///END ZURB Responsive NAV BAR/// -->
+            <div class="grid-x grid-padding-x grid-margin-y"> <!--///SPACER/// -->
+              <div class="large-12 cell">
+              </div>
+            </div>
+        <div class="grid-x grid-padding-x grid-margin-y">
+          <div class="large-10 cell large-offset-1 cell">
+            <!-- ///ORBIT SLIDER/// -->
+              <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                <div class="orbit-wrapper">
+                  <div class="orbit-controls">
+                    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                  </div>
+                  <ul class="orbit-container">
+                    <li class="is-active orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/logo_433.jpg" alt="Evan Logo">
+                        <figcaption class="orbit-caption">Evan Ramirez Graphic Design Logo.</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/hair_rev_800.jpg" alt="hair revolution screen print">
+                        <figcaption class="orbit-caption">Screen Print for Hair Revolution Salon</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/zorn_800.jpg" alt="hatching portrait">
+                        <figcaption class="orbit-caption">Hatching portrait on photoshop</figcaption>
+                      </figure>
+                    </li>
+                    <li class="orbit-slide">
+                      <figure class="orbit-figure">
+                        <img class="orbit-image" src="img/lexy_800.jpg" alt="Picture of Couple at wedding">
+                        <figcaption class="orbit-caption">Moment captured between a couple at a wedding. </figcaption>
+                      </figure>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-
-      <section class="grid-x">
-          <div class="large-12 cell">
-            <img class="interchange" data-interchange="[img/tea-small.jpg, small], [img/tea-medium.jpg, medium], [img/chocolate-large.jpg, large]">
+                <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                  <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                </nav>
+              </div>
+                <!-- ///ORBIT SLIDER/// -->
           </div>
-      </section>
-      <section class="grid-x">
-          <div class="large-12 cell">
-            <h2 class="customer">customer Reviews</h2>
-          </div>
-      </section>
-      <div class="reviews">
-      <section class="grid-x">
-          <div class="large-12 cell">
-            <div class="jhreviews">
-            <p>"The true meaning of chocolate being a aphrodisiac... Willy Wonka style.." - <b>Ethereal</b></P>
-            <p>"I just tasted your Mayan Pepper chai! Wow, it is amazing---the best of everything" - <b>Marnie</b></P>
-            <p>"Your chocolate bars are freakishly, magically delicious! Midnight mocha is
-            phenomenal! How did you get it SO SMOOTH, when it's SO DARK?! WOW!" - <b>Ashley</b></P>
-            <p>"Black Masala Chai- THE BEST haven't even tried the rest yet" - <b>Kermit</b></P>
-            <p>"Best chocolate ever! Dark almond caramel and green earl grey" - <b>Fei</b></P>
+        </div>
+          <div class="grid-x grid-padding-x grid-margin-y">
+            <div class="large-10 cell large-offset-1 cell">
+              <h3> Evan Ramirez provides effective graphic, print, and web designs to clients in a open enviroment with a friendly
+                voice, helping them feel assured and excited about their design solutions.</h3>
             </div>
           </div>
-      </section>
-      </div>
-<div class="openandclose">
-  <div id="timeDiv"></div>
-  <label class="viewOpen" for="modal-state">View Hours&nbsp;&nbsp;<i class="fa fa-clock-o"></i></label>
-  <input type="checkbox" name="modal-state" id="modal-state">
-  <div class="modal-overlay">
-    <label for="modal-state" class="modal-overlay-close"></label>
-    <div class="modal">
-      <label class="button-close" for="modal-state"><i class="fa fa-times"></i></label>
-      <h2>We're Open At These Times</h2>
-      <div id="Monday" class="dateTime">
-        <div class="day">Monday</div>
-        <div class="time">8pm - 2pm</div>
-      </div>
-      <br>
-      <div id="Tuesday" class="dateTime">
-        <div class="day">Tuesday</div>
-        <div class="time">8pm - 2pm</div>
-      </div>
-      <br>
-      <div id="Wednesday" class="dateTime">
-        <div class="day">Wednesday</div>
-        <div class="time">8pm - 2pm</div>
-      </div>
-      <br>
-      <div id="Thursday" class="dateTime">
-        <div class="day">Thursday</div>
-        <div class="time">8pm - 2pm</div>
-      </div>
-      <br>
-      <div id="Friday" class="dateTime">
-        <div class="day">Friday</div>
-        <div class="time">8pm - 2pm</div>
-      </div>
-      <br>
-      <div id="Saturday" class="dateTime">
-        <div class="day">Saturday</div>
-        <div class="time">Closed</div>
-      </div>
-      <br>
-      <div id="Sunday" class="dateTime">
-        <div class="day">Sunday</div>
-        <div class="time">Closed</div>
-      </div>
-    </div>
-  </div>
-</div>
+          <!-- ///REVEAL CODE/// -->
+          <!-- <div class= id="exampleModal1" data-reveal>
+              <h1>Awesome. I Have It.</h1>
+              <p class="lead">Your couch. It is mine.</p>
+              <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+              <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+            <p><button class="button" data-open="exampleModal1">Click me for a modal</button></p>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+    <!-- ///END REVEAL CODE/// -->
 
+      <!-- ///FOOTER/// -->
+      <div class="grid-x grid-padding-x grid-margin-y">
+        <footer class="large-12 cell solidtop">
+          <br>
+          <a href ="https://www.linkedin.com/in/evan-ramirez-6bab18152/" target="blank" alt="Linked in link"><img src="img/inlogo_30.png"></a>
+          <a href ="https://www.instagram.com/navezan/" target="blank" alt="instagram link"><img src="img/instlogo.png"></a>
+          <h4> &#169; 2018 <strong>Evan Ramirez</strong></h4>
+          </div>
+          <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="large-5 cell large-offset-4 cell">
+              <h3 id="today"></h3><h3 id="time"></h3>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main> <!-- ///END GRID CONTAINER/// -->
 
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 
-<!---put html above here ---->
-    </main>
-    <!-- //// need for zurb - EDIT FILEPATHS ///// -->
-    <script src="zurb/js/vendor/jquery.js"></script>
-    <script src="zurb/js/vendor/what-input.js"></script>
-    <script src="zurb/js/vendor/foundation.js"></script>
-    <script src="zurb/js/app.js"></script>
-    <!-- //// need for zurb - EDIT FILEPATHS ///// -->
-    <script src="js/openandclose.js"></script>
-
-    <script>
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-  }
-  </script>
-
-</body>
+      <!-- ///NEED FOR ZURB/// -->
+      <script src="zurb/js/vendor/jquery.js"></script>
+      <script src="zurb/js/vendor/what-input.js"></script>
+      <script src="zurb/js/vendor/foundation.js"></script>
+      <script src="zurb/js/app.js"></script>
+      <!-- ///NEED FOR ZURB/// -->
+      <script src="js/date_time.js"></script>
+  </body>
 </html>
